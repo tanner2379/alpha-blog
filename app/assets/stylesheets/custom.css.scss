@@ -2,6 +2,7 @@
 
 .navbar{
     background-color: black !important;
+    display: table;
 }
 
 .nav-link{
@@ -31,7 +32,9 @@
 
   html,
   body {
-    height: 100%;
+    min-height: 575px;
+    margin-bottom: 35px;
+    clear: both;
   }
   
   #page-content {
