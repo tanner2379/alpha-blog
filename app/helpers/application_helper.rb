@@ -9,14 +9,4 @@ module ApplicationHelper
         image_tag(avatar_url, alt: user.username, class: "rounded shadow mx-auto d-block")
     end
 
-    def current_user
-        #keeps current user stored locally after called the first time so
-        #that the database does not need queried on each call
-        @current_user ||= User.find(session[:user_id]) if session[:user_id]
-    end
-
-    def logged_in?
-        #turns current_user into a boolean
-        !!current_user
-    end
 end
