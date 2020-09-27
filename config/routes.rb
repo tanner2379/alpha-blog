@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   # above is how you expose routes individually
   resources :articles
   resources :users, except: [:new]
+  resources :categories, except: [:destroy]
 end
